@@ -1,0 +1,2 @@
+DELETE http://localhost:5000/api/wines/5dbf94d0298491613c479fb1
+Content-Type: application/json

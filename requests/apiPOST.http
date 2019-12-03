@@ -1,0 +1,14 @@
+
+POST http://localhost:5000/api/wines
+Content-Type: application/json
+
+{
+  "name": "19 Crimes The Banished",
+  "vineyard": "19 Crimes",
+  "location": "Victoria, Australia",
+  "year": 2015,
+  "bin": 45,
+  "purchasePrice": 8.65,
+  "sellPrice": 13.00,
+  "notes": "A blend that is brooding with richness. Like the wine rations served on convict ships, every sip deserves to be savored."
+}

@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb://localhost/wine-cellar",
+    "baseUrl": "http://localhost:5000"
+}

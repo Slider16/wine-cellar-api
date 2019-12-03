@@ -1,0 +1,2 @@
+GET http://localhost:5000/api/wines/5da3ab6639977d41082450c2
+Content-Type: application/json

@@ -1,0 +1,6 @@
+PATCH http://localhost:5000/api/wines/5da3ad0ef351f857309400ff
+Content-Type: application/json
+
+{
+  "location": "New South Wales, Australia"  
+}
