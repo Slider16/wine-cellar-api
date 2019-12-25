@@ -8,8 +8,13 @@ connectDB();
 
 const PORT = 5000;
 
+// Setup Models
 const Wine = require('./models/wineModel');
+const Vendor = require('./models/vendorModel');
+
+// Setup Routes
 const wineRouter = require('./routes/wineRouter')(Wine);
+const vendorRouter = require('./routes/vendorRouter')(Vendor);
 
 // app.use((req, res, next) => {
 //     res.header('Access-Control-Allow-Origin', '*');
@@ -20,6 +25,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 app.use('/api', wineRouter);
+app.use('/api', vendorRouter);
 
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}.  Environment: ${process.env.ENV}`));

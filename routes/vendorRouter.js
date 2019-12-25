@@ -21,7 +21,7 @@ function routes(Vendor) {
     });
     vendorRouter.route('/vendors/:vendorId')
         .get((req, res) => {
-            const returnVendor = req.vendor.toJson();
+            const returnVendor = req.vendor.toJSON();
             res.json(returnVendor);
         })
         .put((req, res) => {
