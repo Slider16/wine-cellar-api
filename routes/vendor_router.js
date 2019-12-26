@@ -1,5 +1,5 @@
 const express = require('express');
-const vendorsController = require('../controllers/vendorsController.js');
+const vendorsController = require('../controllers/vendors_controller.js');
 
 function routes(Vendor) {
     const vendorRouter = express.Router();

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const vendorModel = new Schema(
+const VendorModel = new Schema(
     {
         name: {type:String},
         address: {type:String},
@@ -13,4 +13,4 @@ const vendorModel = new Schema(
     }
 );
 
-module.exports = mongoose.model('Vendor', vendorModel);
+module.exports = mongoose.model('Vendor', VendorModel);

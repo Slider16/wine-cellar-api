@@ -2,6 +2,14 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
+const winePurchaseModel = new Schema(
+    {
+        vendorId: {type:String},
+        purchaseDate: {type:Date},
+        purchasePrice: {type:Number}
+    }
+);
+
 const wineModel = new Schema(
     {
         name: {type:String},
@@ -9,7 +17,7 @@ const wineModel = new Schema(
         location: {type:String},
         year: {type:Number},
         bin: {type:Number},
-        purchasePrice: {type:Number},
+        purchase: [winePurchaseModel],
         sellPrice: {type:Number},
         notes: {type:String},        
     }

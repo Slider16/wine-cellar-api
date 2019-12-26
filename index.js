@@ -9,12 +9,12 @@ connectDB();
 const PORT = 5000;
 
 // Setup Models
-const Wine = require('./models/wineModel');
-const Vendor = require('./models/vendorModel');
+const Wine = require('./models/wine_model');
+const Vendor = require('./models/vendor_model');
 
 // Setup Routes
-const wineRouter = require('./routes/wineRouter')(Wine);
-const vendorRouter = require('./routes/vendorRouter')(Vendor);
+const wineRouter = require('./routes/wine_router')(Wine);
+const vendorRouter = require('./routes/vendor_router')(Vendor);
 
 // app.use((req, res, next) => {
 //     res.header('Access-Control-Allow-Origin', '*');
