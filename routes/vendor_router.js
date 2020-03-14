@@ -1,9 +1,9 @@
 const express = require('express');
-const vendorsController = require('../controllers/vendors_controller.js');
+const vendorController = require('../controllers/vendor_controller.js');
 
 function routes(Vendor) {
     const vendorRouter = express.Router();
-    const controller = vendorsController(Vendor);
+    const controller = vendorController(Vendor);
     vendorRouter.route('/vendors')
         .post(controller.post)
         .get(controller.get);
