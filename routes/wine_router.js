@@ -1,9 +1,9 @@
 const express = require('express');
-const winesController = require('../controllers/winesController.js');
+const wineController = require('../controllers/wine_controller.js');
 
 function routes(Wine) {
     const wineRouter = express.Router();
-    const controller = winesController(Wine);
+    const controller = wineController(Wine);
     wineRouter.route('/wines')
         .post(controller.post)
         .get(controller.get);

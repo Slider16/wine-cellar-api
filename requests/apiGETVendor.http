@@ -1,0 +1,2 @@
+GET http://localhost:5000/api/vendors/5e02d372f9f3d53f306b5f65
+Content-Type: application/json
